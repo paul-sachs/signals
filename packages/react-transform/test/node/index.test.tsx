@@ -522,7 +522,7 @@ describe("React Signals Babel Transform", () => {
 			const expectedOutput = `
 				import { useSignals as _useSignals } from "@preact/signals-react/runtime";
 				function MyComponent() {
-					var _effect = _useSignals();
+					var _effect = _useSignals(1);
 					try {
 						return <div>Hello World</div>;
 					} finally {
@@ -544,7 +544,7 @@ describe("React Signals Babel Transform", () => {
 			const expectedOutput = `
 				import { useSignals as _useSignals } from "@preact/signals-react/runtime";
 				const MyComponent = () => {
-					var _effect = _useSignals();
+					var _effect = _useSignals(1);
 					try {
 						return <div>Hello World</div>;
 					} finally {
@@ -567,7 +567,7 @@ describe("React Signals Babel Transform", () => {
 			const expectedOutput = `
 				import { useSignals as _useSignals } from "@preact/signals-react/runtime";
 				function MyComponent() {
-					var _effect = _useSignals();
+					var _effect = _useSignals(1);
 					try {
 						signal.value;
 						return <div>Hello World</div>;
@@ -591,7 +591,7 @@ describe("React Signals Babel Transform", () => {
 			const expectedOutput = `
 				import { useSignals as _useSignals } from "@preact/signals-react/runtime";
 				const MyComponent = () => {
-					var _effect = _useSignals();
+					var _effect = _useSignals(1);
 					try {
 						signal.value;
 						return <div>Hello World</div>;
@@ -725,7 +725,7 @@ describe("React Signals Babel Transform", () => {
 			const expectedOutput = `
 				import { useSignals as _useSignals } from "custom-source";
 				const MyComponent = () => {
-					var _effect = _useSignals();
+					var _effect = _useSignals(1);
 					try {
 						signal.value;
 						return <div>Hello World</div>;

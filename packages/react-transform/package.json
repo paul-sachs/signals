@@ -1,6 +1,6 @@
 {
   "name": "@preact/signals-react-transform",
-  "version": "0.1.1",
+  "version": "0.2.0",
   "license": "MIT",
   "description": "Manage state with style in React",
   "keywords": [

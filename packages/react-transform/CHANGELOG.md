@@ -1,5 +1,11 @@
 # @preact/signals-react-transform
 
+## 0.2.0
+
+### Minor Changes
+
+- [#446](https://github.com/preactjs/signals/pull/446) [`09f3ed7`](https://github.com/preactjs/signals/commit/09f3ed7c5b7a5a3a86673dfc73cd868766e0eefc) Thanks [@andrewiggins](https://github.com/andrewiggins)! - Use function expression name to determine if it is a Component and should be transformed.
+
 ## 0.1.1
 
 ### Patch Changes
